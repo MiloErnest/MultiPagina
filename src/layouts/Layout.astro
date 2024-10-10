@@ -17,34 +17,33 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+
+		<header class="bg-red-400 h-20">
+
+		</header>
+		<menu class="bg-slate-400 flex justify-between ">
+			<li >
+				<a href="/" class=" block hover:bg-white/30 px-4 font-medium"> Inicio </a>
+			</li>
+			<li >
+				<a href="/quienes-somos" class=" block hover:bg-white/30 px-4 font-medium">quienes somos </a>
+			</li>
+			<li >
+				<a href="/organigrama" class=" block hover:bg-white/30 px-4 font-medium">organigrama </a>
+			</li>
+			<li >
+				<a href="/organigrama/biografia" class=" block hover:bg-white/30 px-4 font-medium">biografia </a>
+			</li>
+			<li >
+				<a href="/contacto" class=" block hover:bg-white/30 px-4 font-medium">Contacto</a>
+			</li>
+		</menu>
+
+
+
 		<slot />
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+	
 </style>
